@@ -1,0 +1,80 @@
+﻿@model TotMotor.Models.Circuits
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Circuits</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Circuit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Circuit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bandera_Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bandera_Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quilòmetres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quilòmetres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Any_Construcció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Any_Construcció)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Num_Corbes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Num_Corbes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripció)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

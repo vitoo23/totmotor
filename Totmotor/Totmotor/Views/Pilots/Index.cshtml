@@ -1,0 +1,63 @@
+﻿@model IEnumerable<TotMotor.Models.Pilot>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.escuderia.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom_pilot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cognoms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nacionalitat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.escuderia.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nom_pilot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cognoms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nacionalitat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripció)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

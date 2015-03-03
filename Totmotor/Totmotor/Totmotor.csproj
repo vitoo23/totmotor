@@ -159,12 +159,27 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AprendreController.cs" />
+    <Compile Include="Controllers\CircuitsController.cs" />
+    <Compile Include="Controllers\ContacteController.cs" />
+    <Compile Include="Controllers\EscuderiaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NoticiesController.cs" />
+    <Compile Include="Controllers\PilotsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Aprendre.cs" />
+    <Compile Include="Models\Circuits.cs" />
+    <Compile Include="Models\Comentari.cs" />
+    <Compile Include="Models\Contacte.cs" />
+    <Compile Include="Models\Escuderia.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Noticies.cs" />
+    <Compile Include="Models\Pilot.cs" />
+    <Compile Include="Models\TotmotorContext.cs" />
+    <Compile Include="Models\Wiki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -214,6 +229,36 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Aprendre\Create.cshtml" />
+    <Content Include="Views\Aprendre\Delete.cshtml" />
+    <Content Include="Views\Aprendre\Details.cshtml" />
+    <Content Include="Views\Aprendre\Edit.cshtml" />
+    <Content Include="Views\Aprendre\Index.cshtml" />
+    <Content Include="Views\Circuits\Create.cshtml" />
+    <Content Include="Views\Circuits\Delete.cshtml" />
+    <Content Include="Views\Circuits\Details.cshtml" />
+    <Content Include="Views\Circuits\Edit.cshtml" />
+    <Content Include="Views\Circuits\Index.cshtml" />
+    <Content Include="Views\Escuderia\Create.cshtml" />
+    <Content Include="Views\Escuderia\Delete.cshtml" />
+    <Content Include="Views\Escuderia\Details.cshtml" />
+    <Content Include="Views\Escuderia\Edit.cshtml" />
+    <Content Include="Views\Escuderia\Index.cshtml" />
+    <Content Include="Views\Noticies\Create.cshtml" />
+    <Content Include="Views\Noticies\Delete.cshtml" />
+    <Content Include="Views\Noticies\Details.cshtml" />
+    <Content Include="Views\Noticies\Edit.cshtml" />
+    <Content Include="Views\Noticies\Index.cshtml" />
+    <Content Include="Views\Pilots\Create.cshtml" />
+    <Content Include="Views\Pilots\Delete.cshtml" />
+    <Content Include="Views\Pilots\Details.cshtml" />
+    <Content Include="Views\Pilots\Edit.cshtml" />
+    <Content Include="Views\Pilots\Index.cshtml" />
+    <Content Include="Views\Contacte\Create.cshtml" />
+    <Content Include="Views\Contacte\Delete.cshtml" />
+    <Content Include="Views\Contacte\Details.cshtml" />
+    <Content Include="Views\Contacte\Edit.cshtml" />
+    <Content Include="Views\Contacte\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

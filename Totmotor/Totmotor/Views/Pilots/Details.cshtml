@@ -1,0 +1,66 @@
+﻿@model TotMotor.Models.Pilot
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pilot</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.escuderia.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.escuderia.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_pilot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_pilot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cognoms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cognoms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nacionalitat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nacionalitat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripció)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

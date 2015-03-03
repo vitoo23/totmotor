@@ -1,0 +1,50 @@
+﻿@model TotMotor.Models.Aprendre
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Aprendre</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contingut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contingut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AutorContingut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AutorContingut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tag)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

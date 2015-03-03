@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TotMotor.Models.Circuits>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom_Circuit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bandera_Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quilòmetres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Any_Construcció)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Num_Corbes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nom_Circuit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bandera_Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quilòmetres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Any_Construcció)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Num_Corbes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripció)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

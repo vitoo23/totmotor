@@ -1,0 +1,56 @@
+﻿@model TotMotor.Models.Noticies
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Noticies</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Títol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Títol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contingut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contingut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_publicació)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data_publicació)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor_Noticia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor_Noticia)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model TotMotor.Models.Noticies
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Noticies</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Títol, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Títol)
+                @Html.ValidationMessageFor(model => model.Títol)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Contingut, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Contingut)
+                @Html.ValidationMessageFor(model => model.Contingut)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Data_publicació, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Data_publicació)
+                @Html.ValidationMessageFor(model => model.Data_publicació)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Autor_Noticia, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Autor_Noticia)
+                @Html.ValidationMessageFor(model => model.Autor_Noticia)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

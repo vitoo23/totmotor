@@ -1,0 +1,74 @@
+﻿@model TotMotor.Models.Circuits
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Circuits</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Circuit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Circuit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bandera_Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bandera_Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quilòmetres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quilòmetres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Any_Construcció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Any_Construcció)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Num_Corbes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Num_Corbes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripció)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

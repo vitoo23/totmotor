@@ -1,0 +1,50 @@
+﻿@model TotMotor.Models.Escuderia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Escuderia</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logotip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logotip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripció)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripció)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_pilotID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_pilotID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

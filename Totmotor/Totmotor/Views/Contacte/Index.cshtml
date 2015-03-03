@@ -1,0 +1,63 @@
+﻿@model IEnumerable<TotMotor.Models.Contacte>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telèfon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direcció)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Codi_Postal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Població)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telèfon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direcció)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codi_Postal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Població)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
