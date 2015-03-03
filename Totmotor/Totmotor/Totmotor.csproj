@@ -166,6 +166,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NoticiesController.cs" />
     <Compile Include="Controllers\PilotsController.cs" />
+    <Compile Include="Controllers\WikiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,6 +260,11 @@
     <Content Include="Views\Contacte\Details.cshtml" />
     <Content Include="Views\Contacte\Edit.cshtml" />
     <Content Include="Views\Contacte\Index.cshtml" />
+    <Content Include="Views\Wiki\Create.cshtml" />
+    <Content Include="Views\Wiki\Delete.cshtml" />
+    <Content Include="Views\Wiki\Details.cshtml" />
+    <Content Include="Views\Wiki\Edit.cshtml" />
+    <Content Include="Views\Wiki\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

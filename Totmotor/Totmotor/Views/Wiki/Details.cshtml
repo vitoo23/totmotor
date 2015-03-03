@@ -1,0 +1,42 @@
+﻿@model TotMotor.Models.Wiki
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Wiki</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contingut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contingut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor_Contingut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor_Contingut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPublicacio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPublicacio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
